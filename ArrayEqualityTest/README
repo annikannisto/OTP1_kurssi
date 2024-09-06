@@ -1,0 +1,20 @@
+
+
+Answers to the questions:
+a. What does the assertArrayEquals method do?
+The assertArrayEquals method checks if two arrays are equal. It verifies that both arrays have the same length and that each corresponding element is equal. If the arrays are not identical, the test fails and reports an error.
+
+b. What will happen if the arrays a1 and a2 are not equal in testSingleDimensionalArrayEquality?
+If a1 and a2 are not equal, the test will fail. JUnit will provide an error message indicating that the arrays do not match. This is because assertArrayEquals checks both the length and the content of the arrays.
+
+c. How does the assertArrayEquals method handle multi-dimensional arrays as seen in testMultiDimensionalArrayEquality?
+For multi-dimensional arrays, assertArrayEquals performs a recursive comparison. It checks that all nested arrays are equal and that their elements match exactly. This means that each sub-array and its contents must be identical and in the same order.
+
+Modifications
+Modified Tests:
+
+Changed one of the arrays in testSingleDimensionalArrayEquality so that they are not equal to test the failure scenario.
+Updated testMultiDimensionalArrayEquality to include arrays that are not equal, demonstrating how the method handles inequality.
+New Test Method:
+
+Added a test method to compare arrays of different types (e.g., String[] and double[]). Used assertArrayEquals to verify their equality and included appropriate assertions to check different data types.
