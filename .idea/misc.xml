@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/Temperature/pom.xml" />
         <option value="$PROJECT_DIR$/ArrayEqualityTest/pom.xml" />
+        <option value="$PROJECT_DIR$/StringManipulatorAnni/pom.xml" />
       </list>
     </option>
   </component>
